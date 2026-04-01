@@ -1,8 +1,7 @@
 
 select 
-case 
-when
-    A+B<=C AND  OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+    case 
+        when A+B<=C AND  OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
         WHEN A = B AND B = C THEN 'Equilateral'
         WHEN A = B OR B = C OR A = C THEN 'Isosceles'
         ELSE 'Scalene'
